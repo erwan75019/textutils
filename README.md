@@ -1,7 +1,7 @@
 # textutils
 
 `textutils` is a small Python library for common text operations. It provides
-simple functions for counting, reversing, and capitalizing text.
+simple functions for counting, reversing, capitalizing, and formatting text.
 
 ## Available functions
 
@@ -11,13 +11,20 @@ simple functions for counting, reversing, and capitalizing text.
 | `character_count(text)` | Count all characters, including spaces and punctuation. |
 | `reverse(text)` | Return the characters in reverse order. |
 | `capitalize_words(text)` | Capitalize the first letter of each word. |
+| `snake_case(text)` | Convert text to lowercase words separated by underscores. |
 
 ## Usage
 
 From the repository root, run Python and import the functions:
 
 ```python
-from textutils import word_count, character_count, reverse, capitalize_words
+from textutils import (
+    capitalize_words,
+    character_count,
+    reverse,
+    snake_case,
+    word_count,
+)
 
 text = "hello world"
 
@@ -25,6 +32,7 @@ print(word_count(text))        # 2
 print(character_count(text))   # 11
 print(reverse(text))           # dlrow olleh
 print(capitalize_words(text))  # Hello World
+print(snake_case(text))        # hello_world
 ```
 
 ## Contributing
