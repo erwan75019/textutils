@@ -1,7 +1,7 @@
 """Public text utility functions."""
 
 from .casing import capitalize_words, snake_case
-from .counting import character_count, word_count
+from .counting import character_count, text_statistics, word_count
 from .transformation import reverse
 
 __all__ = [
@@ -10,4 +10,5 @@ __all__ = [
     "reverse",
     "capitalize_words",
     "snake_case",
+    "text_statistics",
 ]

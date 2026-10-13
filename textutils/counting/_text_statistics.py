@@ -1,3 +1,5 @@
+"""Calculate statistics for text."""
+
 import re
 
 
@@ -29,9 +31,7 @@ def text_statistics(text: str) -> dict:
     word_count = len(words)
 
     sentences = [
-        sentence
-        for sentence in re.split(r"[.!?]+", text)
-        if re.search(r"\w", sentence)
+        sentence for sentence in re.split(r"[.!?]+", text) if re.search(r"\w", sentence)
     ]
     sentence_count = len(sentences)
 
@@ -49,7 +49,7 @@ def text_statistics(text: str) -> dict:
         "line_count": line_count,
         "sentence_count": sentence_count,
         "average_word_length": average_word_length,
-        "longest_word": longest_word
+        "longest_word": longest_word,
     }
 
     return statistics_result
