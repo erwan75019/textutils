@@ -1,5 +1,6 @@
 """Text casing utilities."""
 
-from .snake_case import snake_case
+from ._capitalize_words import capitalize_words
+from ._snake_case import snake_case
 
-__all__ = ["snake_case"]
+__all__ = ["capitalize_words", "snake_case"]

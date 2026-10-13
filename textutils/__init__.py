@@ -1,8 +1,8 @@
 """Public text utility functions."""
 
-from .casing import snake_case
+from .casing import capitalize_words, snake_case
 from .counting import character_count, word_count
-from .transformation import capitalize_words, reverse
+from .transformation import reverse
 
 __all__ = [
     "word_count",
