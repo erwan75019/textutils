@@ -16,3 +16,7 @@ htmlcov/
 .ruff_cache/
 
 .DS_Store
+
+dist/
+build/
+*.egg-info/
